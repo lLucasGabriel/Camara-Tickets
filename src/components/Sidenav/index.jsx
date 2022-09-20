@@ -3,18 +3,16 @@ import styled from 'styled-components'
 import NavContent from './NavContent'
 import Sidebar from './Sidebar'
 
-const Nav = styled.nav`
+const Sidenav = styled.nav`
   position: fixed;
   display: flex;
 `;
 
-function Sidenav() {
+export default () => {
   return (
-    <Nav>
+    <Sidenav>
       <Sidebar/>
       <NavContent/>
-    </Nav>
+    </Sidenav>
   )
 }
-
-export default Sidenav

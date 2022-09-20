@@ -1,11 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import TicketManagement from './TicketManagement'
 import UserPreferences from './UserPreferences/index'
-import DataManagement from './DataManagement/index'
-import CustomizeApp from './CustomizeApp/index'
 
-const Content = styled.ul`
+const NavContent = styled.ul`
   background: linear-gradient(90deg, #2D2E40 0%, #343549 100%);
   width: 340px;
   display: flex;
@@ -15,14 +12,16 @@ const Content = styled.ul`
   .title {
     margin: 30px 12px 55px 16px;
   }
+
+  .hide {
+    display: none;
+  }
 `
 
-function NavContent() {
+export default () => {
   return (
-    <Content>
+    <NavContent>
       <UserPreferences/>
-    </Content>
+    </NavContent>
   )
 }
-
-export default NavContent

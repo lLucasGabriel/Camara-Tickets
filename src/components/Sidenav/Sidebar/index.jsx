@@ -6,7 +6,7 @@ import { ReactComponent as Ticket } from '../../../assets/img/Ticket.svg'
 import { ReactComponent as Database } from '../../../assets/img/Database.svg'
 import { ReactComponent as Edit } from '../../../assets/img/Edit.svg'
 
-const NavList = styled.ul`
+const Sidebar = styled.ul`
   background-color: #454660;
   list-style: none;
   display: flex;
@@ -51,10 +51,9 @@ const NavList = styled.ul`
   }
 `;
 
-function Sidebar() {
-
+export default () => {
   return (
-    <NavList>
+    <Sidebar>
       <li>
         <Menu/>
       </li>
@@ -70,8 +69,6 @@ function Sidebar() {
       <li>
         <Edit/>
       </li>
-    </NavList>
+    </Sidebar>
   )
 }
-
-export default Sidebar
