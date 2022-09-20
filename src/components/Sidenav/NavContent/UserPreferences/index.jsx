@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import NavContentTitle from '../NavContentTitle'
 import ProfileImage from './ProfileImage'
-import UserEdit from '../../../Styles/svg/UserEdit'
-import UserAdd from '../../../Styles/svg/UserAdd'
-import Logout from '../../../Styles/svg/Logout'
+import { ReactComponent as UserEdit } from '../../../../assets/img/UserEdit.svg'
+import { ReactComponent as UserAdd } from '../../../../assets/img/UserAdd.svg'
+import { ReactComponent as Logout } from '../../../../assets/img/Logout.svg'
 
 export const UserPreferences = styled.ul`
   .navLink:not(.title){

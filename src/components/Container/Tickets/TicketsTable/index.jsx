@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import Profile from '../../../Styles/svg/Profile';
-import Ticket from '../../../Styles/svg/Ticket';
-import Clock from '../../../Styles/svg/Clock';
-import Home from '../../../Styles/svg/Home';
-import Support from '../../../Styles/svg/Support';
-import Heart from '../../../Styles/svg/Heart';
-import Search from '../../../Styles/svg/Search';
-import Arrow from '../../../Styles/svg/Arrow';
+import { ReactComponent as Profile } from '../../../../assets/img/Profile.svg';
+import { ReactComponent as Ticket } from '../../../../assets/img/Ticket.svg';
+import { ReactComponent as Clock } from '../../../../assets/img/Clock.svg';
+import { ReactComponent as Home } from '../../../../assets/img/Home.svg';
+import { ReactComponent as Support } from '../../../../assets/img/Support.svg';
+import { ReactComponent as Heart } from '../../../../assets/img/Heart.svg';
+import { ReactComponent as Search } from '../../../../assets/img/Search.svg';
+import { ReactComponent as Arrow } from '../../../../assets/img/Arrow.svg';
 import Status from '../../Status';
 import user1 from '../../../Styles/images/user1.png';
 import user2 from '../../../Styles/images/user2.png';

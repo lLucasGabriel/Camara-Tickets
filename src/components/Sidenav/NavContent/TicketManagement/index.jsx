@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import NavContentTitle from '../NavContentTitle'
 import OptionButton from '../../../Form/OptionButton'
-import Add from '../../../Styles/svg/Add'
-import Ticket from '../../../Styles/svg/Ticket'
+import { ReactComponent as Add } from '../../../../assets/img/Add.svg'
+import { ReactComponent as Ticket } from '../../../../assets/img/Ticket.svg'
 
 const TicketManagement = styled.ul`
     .navLink:not(.title){

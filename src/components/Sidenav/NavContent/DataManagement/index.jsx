@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import NavContentTitle from '../NavContentTitle'
-import Data from '../../../Styles/svg/Data'
-import Printer from '../../../Styles/svg/Printer'
-import Nagios from '../../../Styles/svg/Nagios'
+import { ReactComponent as Data } from '../../../../assets/img/Data.svg'
+import { ReactComponent as Printer } from '../../../../assets/img/Printer.svg'
+import { ReactComponent as Nagios } from '../../../../assets/img/Nagios.svg'
 
 const DataManagement = styled.ul`
     .navLink:not(.title){

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import NavContentTitle from '../NavContentTitle'
-import BurocraticTheme from '../../../Styles/svg/BurocraticTheme'
-import PurpleTheme from '../../../Styles/svg/PurpleTheme'
-import OrangeTheme from '../../../Styles/svg/OrangeTheme'
+import { ReactComponent as BurocraticTheme } from '../../../../assets/img/OrangeTheme.svg'
+import { ReactComponent as PurpleTheme } from '../../../../assets/img/PurpleTheme.svg'
+import { ReactComponent as OrangeTheme } from '../../../../assets/img/OrangeTheme.svg'
 
 const CustomizeApp = styled.ul`
     .navLink:not(.title){

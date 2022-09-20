@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-import arms from '../../../assets/img/brasão.png'
-import Profile from '../../Styles/svg/Profile'
-import Arrow from '../../Styles/svg/Arrow'
-import Notification from '../../Styles/svg/Notification'
+import arms from '../../../assets/img/brasão.png';
+import { ReactComponent as Profile } from '../../../assets/img/Profile.svg';
+import { ReactComponent as Arrow } from '../../../assets/img/Arrow.svg';
+import { ReactComponent as Notification } from '../../../assets/img/Notification.svg';
 
 const Head = styled.header`
     background: linear-gradient(90deg, #2D2E40 0%, #343549 100%);

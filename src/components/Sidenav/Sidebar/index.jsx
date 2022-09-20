@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Menu from '../../Styles/svg/Menu'
-import User from '../../Styles/svg/User'
-import Ticket from '../../Styles/svg/Ticket'
-import Database from '../../Styles/svg/Database'
-import Edit from '../../Styles/svg/Edit'
+import { ReactComponent as Menu } from '../../../assets/img/Menu.svg'
+import { ReactComponent as User } from '../../../assets/img/User.svg'
+import { ReactComponent as Ticket } from '../../../assets/img/Ticket.svg'
+import { ReactComponent as Database } from '../../../assets/img/Database.svg'
+import { ReactComponent as Edit } from '../../../assets/img/Edit.svg'
 
 const NavList = styled.ul`
   background-color: #454660;
