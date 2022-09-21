@@ -9,27 +9,27 @@ const Status = styled.div`
         font-weight: 700;
     }
 
-    .green {
+    .low, .open {
         background-color: #DDFFCD;
         color: #007F00;
     }
 
-    .orange {
+    .medium, .progress {
         background-color: #FFE6C0;
         color: #F99500;
     }
 
-    .red {
+    .high, .closed {
         background-color: #FFD3D3;
         color: #F90000;;
     }
 
 `;
 
-export default ({ color, text }) => {
+export default ({ status, text }) => {
   return (
     <Status>
-        <p className={color}>• {text}</p>
+        <p className={status}>• {text}</p>
     </Status>
   )
 }

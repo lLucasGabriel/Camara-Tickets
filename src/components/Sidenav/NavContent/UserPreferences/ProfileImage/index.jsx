@@ -40,7 +40,7 @@ function ProfileImage() {
   return (
     <ProfileTemplate>
         <div className='profileBackground'></div>
-        <img src={user1} className='profileImage'/>
+        <img src={user1} className='profileImage' alt='User'/>
         <h2 className='profileName'>Aldous Huxley</h2>
     </ProfileTemplate>
   )

@@ -62,7 +62,7 @@ export default () => {
                   </div>
                 </td>
                 <td>
-                  <Status color={"green"} text={"Baixa"}/>
+                  <Status status={ticket.priroity} text={ticket.priroity}/>
                 </td>
                 <td>
                   <p className='local'>
@@ -74,7 +74,7 @@ export default () => {
                   <p>{ticket.date}</p>
                 </td>
                 <td>
-                  <Status color={"green"} text={"Aberto"}/>                    
+                  <Status status={ticket.status} text={ticket.status}/>                    
                 </td>
                 <td>
                   <Support/>

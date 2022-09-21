@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { ReactComponent as Menu } from '../../../assets/img/Menu.svg'
 import { ReactComponent as User } from '../../../assets/img/User.svg'
