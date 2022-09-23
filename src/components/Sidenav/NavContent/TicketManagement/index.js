@@ -1,4 +1,5 @@
 import React from 'react'
+import * as S from './styles'
 
 import NavContentTitle from '../NavContentTitle'
 import OptionButton from '../../../Form/OptionButton'
@@ -10,7 +11,7 @@ export default function TicketManagement() {
   return (
     <S.NavContent>
       <S.NavList>
-        <li className='navLink' >
+        <li>
           <NavContentTitle title="Gerenciar Tickets"/>
         </li>
         <li className='navLink'>
@@ -21,7 +22,7 @@ export default function TicketManagement() {
           <Ticket/>
           <p>Tickets</p>
         </li>
-        <li className='navLink'>
+        <li>
           <NavContentTitle title="Configurações"/>
         </li>
         <OptionButton/>

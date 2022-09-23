@@ -11,7 +11,7 @@ export default () => {
   return (
     <S.NavContent>
       <S.NavList>
-        <li className='navLink'>
+        <li>
         <NavContentTitle title="Dispositivos de Rede"/>
         </li>
         <li className='navLink'>

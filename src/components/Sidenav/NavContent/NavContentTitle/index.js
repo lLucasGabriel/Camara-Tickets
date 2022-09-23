@@ -3,7 +3,7 @@ import * as S from './styles'
 
 export default function NavContentTitle({title}) {
   return (
-    <S.NavContentTitle className='title'>
+    <S.NavContentTitle>
       {title}
     </S.NavContentTitle>
   )

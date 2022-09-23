@@ -2,11 +2,10 @@ import React from 'react';
 
 import { GlobalStyle } from './components/Styles/global.js';
 import { ThemeProvider } from 'styled-components'
-import { burocraticTheme, purpleTheme, orangeTheme } from './components/Styles/themes/themes'
+import { purpleTheme } from './components/Styles/themes/themes'
 
-import Sidenav from './components/Sidenav/index.jsx';
-import DatacenterDashboard from './pages/DatacenterDashboard/index.js';
 import Tickets from './pages/Tickets/index.js';
+import Sidenav from './components/Sidenav/index.js';
 
 
 function App() {

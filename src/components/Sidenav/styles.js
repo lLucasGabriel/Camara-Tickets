@@ -1,12 +1,12 @@
-import React from 'react'
 import styled from 'styled-components'
-import { ReactComponent as Menu } from '../../../assets/img/Menu.svg'
-import { ReactComponent as User } from '../../../assets/img/User.svg'
-import { ReactComponent as Ticket } from '../../../assets/img/Ticket.svg'
-import { ReactComponent as Database } from '../../../assets/img/Database.svg'
-import { ReactComponent as Edit } from '../../../assets/img/Edit.svg'
 
-const Sidebar = styled.ul`
+export const Sidenav = styled.nav`
+  position: fixed;
+  display: flex;
+`;
+
+
+export const Sidebar = styled.ul`
   background-color: #454660;
   list-style: none;
   display: flex;
@@ -50,25 +50,3 @@ const Sidebar = styled.ul`
     fill: ${({theme}) => theme.contrastColor}
   }
 `;
-
-export default () => {
-  return (
-    <Sidebar>
-      <li>
-        <Menu/>
-      </li>
-      <li>
-        <User/>
-      </li>
-      <li>
-        <Ticket/>
-      </li>
-      <li>
-        <Database/>
-      </li>
-      <li>
-        <Edit/>
-      </li>
-    </Sidebar>
-  )
-}
