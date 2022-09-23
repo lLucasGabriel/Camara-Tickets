@@ -33,9 +33,6 @@ export default function Sidenav() {
         </li>
       </S.Sidebar>
       <UserPreferences/>
-      <DataManagement/>
-      <TicketManagement/>
-      <CustomizeApp/>
     </S.Sidenav>
   )
 }
