@@ -6,13 +6,14 @@
             "name": "Aldous Huxley",
             "email": "aldous.huxley@camarasantos.sp.gov.br"
         },
-        "priroity": "low",
+        "priority": "Baixa",
         "local": {
             "floor": "Térreo",
             "sector": "Divisão de Recursos Humanos"
         },
         "date": "10/04/2022 10:42",
-        "status": "open"
+        "status": "Aberto",
+        "img": "assets/img/user1.png"
     },
     {
         "id": 2,
@@ -21,13 +22,14 @@
             "name": "Shairon Hosokawa",
             "email": "shairon.hosokawa@camarasantos.sp.gov.br"
         },
-        "priroity": "medium",
+        "priority": "Média",
         "local": {
             "floor": "1º Andar",
             "sector": "Gabinete do Vereador"
         },
         "date": "10/04/2022 10:42",
-        "status": "progress"
+        "status": "Em Atendimento",
+        "img": "assets/img/user2.png"
     },
     {
         "id": 3,
@@ -36,12 +38,29 @@
             "name": "Albert Camus",
             "email": "albert.camus@camarasantos.sp.gov.br"
         },
-        "priroity": "high",
+        "priority": "Alta",
         "local": {
             "floor": "Castelinho",
             "sector": "Divisão de Almoxerifado e Patrimônio"
         },
         "date": "10/04/2022 10:42",
-        "status": "closed"
+        "status": "Fechado",
+        "img": "assets/img/user3.png"
+    },
+    {
+        "id": 4,
+        "request": "Abertura de porta",
+        "requester": {
+            "name": "Sophie Turner",
+            "email": "sophie.turner@camarasantos.sp.gov.br"
+        },
+        "priority": "Baixa",
+        "local": {
+            "floor": "Castelinho",
+            "sector": "Divisão de Compras e Licitação"
+        },
+        "date": "10/04/2022 10:42",
+        "status": "Aberto",
+        "img": "assets/img/user4.png"
     }
 ]

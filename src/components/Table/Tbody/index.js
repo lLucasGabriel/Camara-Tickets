@@ -4,7 +4,6 @@ import * as S from './styles'
 import Status from '../Status';
 import tickets from './tickets.json'
 
-import user1 from '../../../components/Styles/images/user1.png';
 import { ReactComponent as Support } from '../../../assets/img/Support.svg';
 import { ReactComponent as Heart } from '../../../assets/img/Heart.svg';
 
@@ -17,7 +16,7 @@ export default function Tbody() {
                 <td>{ticket.request}</td>
                 <td>
                   <div className='user'>
-                    <img className='userImage' src={user1} alt='User'/>
+                    <img className='userImage' src={ticket.img} alt='User'/>
                     <p className='requester'>
                       <span>{ticket.requester.name}</span>
                       <span>{ticket.requester.email}</span>
@@ -25,7 +24,7 @@ export default function Tbody() {
                   </div>
                 </td>
                 <td>
-                  <Status status={ticket.priroity} text={ticket.priroity}/>
+                  <Status status={ticket.priority} text={ticket.priority}/>
                 </td>
                 <td>
                   <p className='local'>

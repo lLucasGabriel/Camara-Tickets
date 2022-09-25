@@ -6,7 +6,7 @@ import { ReactComponent as Ticket } from '../../../assets/img/Ticket.svg';
 import { ReactComponent as Clock } from '../../../assets/img/Clock.svg';
 import { ReactComponent as Home } from '../../../assets/img/Home.svg';
 
-export default ({}) => {
+export default function Thead () {
   return (
     <S.Thead>
       <tr>

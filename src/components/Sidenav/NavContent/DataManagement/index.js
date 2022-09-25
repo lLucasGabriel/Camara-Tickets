@@ -1,5 +1,4 @@
 import React from 'react'
-
 import * as S from './styles'
 
 import NavContentTitle from '../NavContentTitle'
@@ -7,7 +6,7 @@ import { ReactComponent as Data } from '../../../../assets/img/Data.svg'
 import { ReactComponent as Printer } from '../../../../assets/img/Printer.svg'
 import { ReactComponent as Nagios } from '../../../../assets/img/Nagios.svg'
 
-export default () => {
+export default function DataManagement() {
   return (
     <S.NavContent>
       <S.NavList>

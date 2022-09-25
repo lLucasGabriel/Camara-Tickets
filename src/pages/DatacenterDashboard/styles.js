@@ -6,7 +6,6 @@ export const Container = styled.div`
     flex-direction: column;
     background-color: #ECF0F5;
     width: 100%;
-    margin-left: 425px;
 `
 
 export const DatacenterDashboard = styled.main`

@@ -1,10 +1,16 @@
 import styled from 'styled-components'
 
 export const Sidenav = styled.nav`
-  position: fixed;
   display: flex;
-`;
 
+  .closedMenu {
+    display: none;
+  }
+
+  .openMenu {
+    display: flex;
+  }
+`;
 
 export const Sidebar = styled.ul`
   background-color: #454660;
