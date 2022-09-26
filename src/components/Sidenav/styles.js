@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const Sidenav = styled.nav`
   display: flex;
 
-  .closedMenu {
+  .close {
     display: none;
   }
 
-  .openMenu {
+  .open {
     display: flex;
   }
 `;
@@ -36,7 +36,6 @@ export const Sidebar = styled.ul`
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 12px;
-    transition: 3s ease-in-out;
     cursor: pointer;
   }
   li:not(:first-child):hover {
@@ -56,3 +55,11 @@ export const Sidebar = styled.ul`
     fill: ${({theme}) => theme.contrastColor}
   }
 `;
+
+export const NavContent = styled.div`
+    background: linear-gradient(90deg, #2D2E40 0%, #343549 100%);
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
+`

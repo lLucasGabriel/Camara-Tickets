@@ -41,11 +41,3 @@ export const NavList = styled.ul`
     margin-left: 20px;
   }  
 `;
-
-export const NavContent = styled.div`
-  background: linear-gradient(90deg, #2D2E40 0%, #343549 100%);
-  width: 340px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
-`

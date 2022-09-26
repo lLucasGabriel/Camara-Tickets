@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import * as S from './styles'
 
 import NavContentTitle from '../NavContentTitle'
@@ -8,24 +9,24 @@ import { ReactComponent as Nagios } from '../../../../assets/img/Nagios.svg'
 
 export default function DataManagement() {
   return (
-    <S.NavContent>
-      <S.NavList>
-        <li>
-        <NavContentTitle title="Dispositivos de Rede"/>
-        </li>
+    <S.NavList>
+      <li>
+      <NavContentTitle title="Dispositivos de Rede"/>
+      </li>
+      <Link to={'/'}>
         <li className='navLink'>
           <Data/>
           <p>Datacenter Dashboard</p>
         </li>
-        <li className='navLink'>
-          <Printer/>
-          <p>Visualizar Impressoras</p>
-        </li>
-        <li className='navLink'>
-          <Nagios/>
-          <p>Nagios</p>
-        </li>
-      </S.NavList>
-    </S.NavContent>
+      </Link>
+      <li className='navLink'>
+        <Printer/>
+        <p>Visualizar Impressoras</p>
+      </li>
+      <li className='navLink'>
+        <Nagios/>
+        <p>Nagios</p>
+      </li>
+    </S.NavList>
   )
 }
