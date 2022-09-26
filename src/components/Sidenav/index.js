@@ -16,7 +16,6 @@ import { ReactComponent as Edit } from '../../assets/img/Edit.svg'
 export default function Sidenav() {
   const [aberto, setAberto] = useState(true);
   const [menuAberto, setMenuAberto] = useState(1);
-  console.log(aberto)
 
   function abrirMenu(menu) {
     setMenuAberto(menu);
