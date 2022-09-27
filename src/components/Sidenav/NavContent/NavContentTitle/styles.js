@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const NavContentTitle = styled.h1`
   position: relative;

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const NavList = styled.ul`
   .navLink:not(:first-child){
@@ -40,7 +40,7 @@ export const NavList = styled.ul`
     color: #ffffffca;
     margin-left: 20px;
   }
-`
+`;
 
 export const ProfileTemplate = styled.li`
     position: relative;
@@ -74,4 +74,4 @@ export const ProfileTemplate = styled.li`
         text-align: center;
         cursor: default;
     }
-`
+`;

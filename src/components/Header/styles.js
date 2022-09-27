@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Head = styled.header`
     background: linear-gradient(90deg, #2D2E40 0%, #343549 100%);

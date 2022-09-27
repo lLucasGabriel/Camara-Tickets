@@ -7,14 +7,14 @@ import NotFound from '../pages/NotFound/index.js';
 import Sidenav from '../components/Sidenav';
 
 export default function MainRoutes() {
-    return (
-        <>
-            <Sidenav/>
-            <Routes>
-                <Route path='/' element={<DatacenterDashboard />} />
-                <Route path='/tickets' element={<Tickets />} />
-                <Route path='*' element={<NotFound />} />
-            </Routes>
-        </>
-    )
+	return (
+		<>
+			<Sidenav/>
+			<Routes>
+				<Route path='/' element={<DatacenterDashboard />} />
+				<Route path='/tickets' element={<Tickets />} />
+				<Route path='*' element={<NotFound />} />
+			</Routes>
+		</>
+	);
 }

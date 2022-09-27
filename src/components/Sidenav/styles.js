@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Sidenav = styled.nav`
   display: flex;
@@ -62,4 +62,4 @@ export const NavContent = styled.div`
     display: flex;
     flex-direction: column;
     box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
-`
+`;

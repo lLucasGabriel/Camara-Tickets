@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
     height: 100vh;
@@ -6,7 +6,7 @@ export const Container = styled.div`
     flex-direction: column;
     background-color: #ECF0F5;
     width: 100%;
-`
+`;
 
 export const DatacenterDashboard = styled.main`
   background: linear-gradient(90deg, ${({theme}) => theme.secondaryColor} 0%, ${({theme}) => theme.primaryColor} 100%);

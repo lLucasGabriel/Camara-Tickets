@@ -1,8 +1,8 @@
-import React from 'react'
-import * as S from './styles'
+import React from 'react';
+import * as S from './styles';
 
 export default function Chart() {
-  return (
-    <S.Chart></S.Chart>
-  )
+	return (
+		<S.Chart></S.Chart>
+	);
 }
