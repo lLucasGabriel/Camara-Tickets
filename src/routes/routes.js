@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Tickets from '../pages/Tickets';
 import DatacenterDashboard from '../pages/DatacenterDashboard';
@@ -12,7 +12,7 @@ export default function MainRoutes() {
 			<Sidenav/>
 			<Routes>
 				<Route path='/' element={<DatacenterDashboard />} />
-				<Route path='/tickets' element={<Tickets />} />
+				<Route path='tickets' element={<Tickets />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</>

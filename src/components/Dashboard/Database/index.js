@@ -1,6 +1,12 @@
 import React from 'react';
 import * as S from './styles';
 
+import PropTypes from 'prop-types';
+
+Database.propTypes = {
+	server: PropTypes.string,
+};
+
 export default function Database({server}) {
 	return (
 		<S.Database>

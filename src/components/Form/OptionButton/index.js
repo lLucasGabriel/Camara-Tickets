@@ -1,6 +1,12 @@
 import React from 'react';
 import * as S from './styles';
 
+import PropTypes from 'prop-types';
+
+OptionButton.propTypes = {
+	description: PropTypes.string,
+};
+
 export default function OptionButton({description}) {
 	return (
 		<>
