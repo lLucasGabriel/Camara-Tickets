@@ -13,15 +13,15 @@ export default function CustomizeApp() {
 			<li>
 				<NavContentTitle title="Personalizar"/>
 			</li>
-			<li className='navLink'>
+			<li className='navLink' onClick={() => localStorage.setItem('theme', 'burocraticTheme')}>
 				<BurocraticTheme/>
 				<p>Burocratic</p>
 			</li>
-			<li className='navLink'>
+			<li className='navLink'onClick={() => localStorage.setItem('theme', 'purpleTheme')}>
 				<PurpleTheme/>
 				<p>Midnight Purple</p>
 			</li>
-			<li className='navLink'>
+			<li className='navLink'onClick={() => localStorage.setItem('theme', 'orangeTheme')}>
 				<OrangeTheme/>
 				<p>Orange</p>
 			</li>
