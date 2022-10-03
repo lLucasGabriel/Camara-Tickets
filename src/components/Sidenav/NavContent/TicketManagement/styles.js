@@ -36,7 +36,7 @@ export const NavList = styled.ul`
       font-size: 18px;
       line-height: 17px;
       letter-spacing: 0.09em;
-      color: #ffffffca;
+      color: #ffffff;
       margin-left: 20px;
     }
 `;

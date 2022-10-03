@@ -14,10 +14,12 @@ export default function TicketManagement() {
 			<li>
 				<NavContentTitle title="Gerenciar Tickets"/>
 			</li>
-			<li className='navLink'>
-				<Add/>
-				<p>Novo Ticket</p>
-			</li>
+			<Link to={'registerTicket'}>
+				<li className='navLink'>
+					<Add/>
+					<p>Novo Ticket</p>
+				</li>
+			</Link>
 			<Link to={'tickets'}>
 				<li className='navLink'>
 					<Ticket/>
