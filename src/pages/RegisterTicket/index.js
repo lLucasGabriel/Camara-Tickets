@@ -45,6 +45,15 @@ export default function RegisterTicket() {
 							id={'local'} 
 							inputType={'text'}
 						/>
+						<S.CheckboxLabel>Prioridade</S.CheckboxLabel>
+						<S.Checkbox>
+							<input type='Checkbox' value='low' id='low' name='low'/>
+							<label htmlFor='low'>Baixa</label>
+							<input type='Checkbox' value='medium' id='medium' name='medium'/>
+							<label htmlFor='medium'>Média</label>
+							<input type='Checkbox' value='high' id='high' name='high'/>
+							<label htmlFor='high'>Alta</label>
+						</S.Checkbox>
 					</S.Form>
 				</S.Section>
 			</main>

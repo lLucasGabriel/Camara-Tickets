@@ -3,20 +3,17 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
     z-index: 1;
     width: 240px;
-    height: 600px;
+    height: 570px;
     background: #FAFAFA;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding: 8px;
-    margin: 10px 0px 10px 20px;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
 
     h2 {
         font-family: 'Inter';
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
         color: #252A36;
-        padding: 18px 15px;
+        padding: 15px 15px;
         border-bottom: solid 1px  #ECF0F5;
     }
 
@@ -24,6 +21,11 @@ export const Nav = styled.nav`
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 3px 8px;
+    }
+    
+    ul:not(:last-child) {
+        border-bottom: solid 1px  #ECF0F5;
     }
 
     .active {
@@ -44,7 +46,7 @@ export const ListTitle = styled.li`
     font-size: 15px;
     line-height: 18px;
     color: #6A6A6A;
-    padding: 18px 15px;
+    padding: 18px 10px;
 `;
 
 export const ListItem = styled.li`
@@ -54,7 +56,7 @@ export const ListItem = styled.li`
     height: 40px;
     background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
+    border-radius: 2px;
     margin-bottom: 12px;
     cursor: pointer;
     

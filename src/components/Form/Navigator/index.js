@@ -9,7 +9,7 @@ import { ReactComponent as Home } from '../../../assets/img/Home.svg';
 export default function Navigator() {
 	return (
 		<S.Nav>
-			<h2>Adicionar</h2>
+			<h2>CADASTRAR</h2>
 			<ul>
 				<S.ListTitle>Tickets</S.ListTitle>
 				<S.ListItem className='active'>

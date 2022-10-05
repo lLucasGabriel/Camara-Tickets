@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Fieldset = styled.fieldset`
     position: relative;
     height: 60px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     border: 0;
@@ -19,7 +20,7 @@ export const Label = styled.label`
     position: absolute;
     left: 1rem;
     top: 0.8rem;
-    padding: 0 0.5rem;
+    padding: 0 0.2rem;
     font-weight: 400;
     font-size: 15px;
     background-color: #ffffff;
