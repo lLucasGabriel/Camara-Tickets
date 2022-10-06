@@ -10,16 +10,14 @@ export const Container = styled.div`
     main {
         display: flex;
         width: 100%;
-        height: 100vh;
         align-items: center;
-        margin-bottom: 20%;
+        margin-top: 38px;
     }
 `;
 
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #ffffff;
     width: 100%;
     height: 570px;
