@@ -9,11 +9,11 @@ import MainRoutes from './routes/routes.js';
 
 export default function App() {
 	return (
-		<ThemeProvider theme={theme[localStorage.getItem('theme')]}>
+		<ThemeProvider theme={theme.purpleTheme}>
 			<Router>
-				<MainRoutes/>
+				<MainRoutes />
 			</Router>
-			<GlobalStyle/>
+			<GlobalStyle />
 		</ThemeProvider>
 	);
 }
