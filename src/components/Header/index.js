@@ -10,20 +10,25 @@ import { ReactComponent as Notification } from '../../assets/img/Notification.sv
 
 export default function Header() {
 	return (
-		<S.Head>
-			<div className='title'>
-				<img src={Brasao} alt=''/>
-				<h1>NETADMIN CENTRAL DE ATENDIMENTO</h1>
-			</div>
-			<div className='userTools'>
+		<S.Header>
+			<S.Head className='title'>
+				<S.Arms>
+					<div>
+						<img src={Brasao} alt=''/>
+					</div>
+				</S.Arms>
+				<h1>CÂMARA TICKETS</h1>
+			</S.Head>
+			<S.Tools>
+				<Notification/>
 				<Profile/>
-				<div className='userProfile'>
+				<S.UserTools>
 					<div className='profileImage'></div>
 					<p className='profileName'>Aldous Huxley</p>
+					<p className='username'>Aldous Huxley</p>
 					<Arrow/>
-				</div>
-				<Notification/>
-			</div>
-		</S.Head>
+				</S.UserTools>
+			</S.Tools>
+		</S.Header>
 	);
 }

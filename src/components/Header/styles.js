@@ -1,5 +1,60 @@
 import styled from 'styled-components';
 
+export const Header = styled.header`
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: linear-gradient(90deg, #433848 0%, #957E90 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`;
+
+export const Head = styled.div`
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+`;
+
+export const Arms = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #3F3544;
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: #CCB8C1;
+        border: 2px solid #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+    }
+`;
+
+export const Tools = styled.div`
+
+`;
+
+export const UserTools = styled.div`
+
+`;
+
+
+/*
 export const Head = styled.header`
     background: linear-gradient(90deg, #2D2E40 0%, #343549 100%);
     display: flex;
@@ -66,3 +121,4 @@ export const Head = styled.header`
         margin: 0px 10px
     }
 `;
+*/
