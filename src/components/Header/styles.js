@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Header = styled.header`
+export const Container = styled.header`
     display: flex;
     align-items: center;
     height: 70px;
@@ -11,6 +11,7 @@ export const Header = styled.header`
 export const Head = styled.div`
     display: flex;
     align-items: center;
+    width: 250px;
 
     h1 {
         font-weight: 300;

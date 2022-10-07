@@ -7,12 +7,10 @@ import Tbody from '../../components/Table/Tbody';
 import TableFooter from '../../components/Table/TableFooter';
 
 import { ReactComponent as Search } from '../../assets/img/Search.svg';
-import Header from '../../components/Header';
 
 export default function Tickets() {
 	return (
 		<S.Container>  
-			<Header/>
 			<S.Tickets>
 				<h2>Tickets</h2>
 				<S.TicketsTable>

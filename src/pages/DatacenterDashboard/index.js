@@ -4,12 +4,10 @@ import * as S from './styles';
 import Chart from '../../components/Dashboard/Chart';
 import Database from '../../components/Dashboard/Database';
 import Thermostats from '../../components/Dashboard/Thermostats';
-import Header from '../../components/Header';
 
 export default function DatacenterDashboard() {
 	return (
 		<S.Container>
-			<Header/>
 			<S.DatacenterDashboard>
 				<h2>Datacenter Dashboard</h2>
 				<section className='dashboard'>

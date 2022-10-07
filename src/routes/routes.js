@@ -6,11 +6,12 @@ import DatacenterDashboard from '../pages/DatacenterDashboard';
 import NotFound from '../pages/NotFound/index.js';
 
 import RegisterTicket from '../pages/RegisterTicket';
+import Template from '../components/Template';
 
 export default function MainRoutes() {
 	return (
 		<>
-
+			<Template/>
 			<Routes>
 				<Route path='/' element={<DatacenterDashboard />} />
 				<Route path='tickets' element={<Tickets />} />

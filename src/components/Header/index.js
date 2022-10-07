@@ -10,7 +10,7 @@ import { ReactComponent as Notification } from '../../assets/img/Notification.sv
 
 export default function Header() {
 	return (
-		<S.Header>
+		<S.Container>
 			<S.Head className='title'>
 				<S.Arms>
 					<div>
@@ -29,6 +29,6 @@ export default function Header() {
 					<Arrow/>
 				</S.UserTools>
 			</S.Tools>
-		</S.Header>
+		</S.Container>
 	);
 }

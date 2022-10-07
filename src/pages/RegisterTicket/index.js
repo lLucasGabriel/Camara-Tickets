@@ -1,7 +1,6 @@
 import React from 'react';
 import * as S from './styles';
 
-import Header from '../../components/Header';
 import Navigator from '../../components/Form/Navigator';
 import Fieldset from '../../components/Form/Fieldset';
 import Textarea from '../../components/Form/Textarea';
@@ -9,7 +8,6 @@ import Textarea from '../../components/Form/Textarea';
 export default function RegisterTicket() {
 	return (
 		<S.Container>
-			<Header />
 			<main>
 				<Navigator />
 				<S.Section>
