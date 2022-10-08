@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    height: 100vh;
+    height: calc(100vh - 70px);
     display: flex;
-    flex-direction: column;
     background-color: #ECF0F5;
     width: 100%;
 `;
@@ -15,6 +14,7 @@ export const NotFound = styled.main`
     align-items: center;
     background: linear-gradient(180deg, #39286A 0%, #9259CC 100%);
     height: 100%;
+    width: 100%;
 
     .error404 {
         display: flex;

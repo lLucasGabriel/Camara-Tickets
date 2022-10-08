@@ -2,11 +2,11 @@ import React from 'react';
 import * as S from './styles';
 
 import Brasao from '../../assets/img/brasão.png';
+import SearchBar from '../Form/SearchBar';
 
 import { ReactComponent as Profile } from '../../assets/img/Profile.svg';
 import { ReactComponent as Arrow } from '../../assets/img/Arrow.svg';
 import { ReactComponent as Notification } from '../../assets/img/Notification.svg';
-
 
 export default function Header() {
 	return (
@@ -19,6 +19,7 @@ export default function Header() {
 				</S.Arms>
 				<h1>CÂMARA TICKETS</h1>
 			</S.Head>
+			<SearchBar />
 			<S.Tools>
 				<Notification/>
 				<Profile/>

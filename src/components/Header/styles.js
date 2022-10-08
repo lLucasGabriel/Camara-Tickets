@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.header`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 15px;
     height: 70px;
     background: linear-gradient(90deg, #433848 0%, #957E90 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -51,9 +51,10 @@ export const Arms = styled.div`
 `;
 
 export const Tools = styled.div`
+    margin-left: auto;
     display: flex;
+    justify-self: end;
     align-items: center;
-    justify-content: center;
     gap: 15px;
 
     svg {
@@ -63,8 +64,10 @@ export const Tools = styled.div`
         padding: 5px;
         border: 0.4px solid #ECF0F5;
         border-radius: 2px;
-
         cursor: pointer;
+    }
+    svg:hover {
+        background-color: ${({theme}) => theme.primaryColor};
     }
 `;
 
@@ -87,6 +90,9 @@ export const UserTools = styled.div`
         border: 0;
         height: 20px;
         width: 30px;
+    }
+    :hover {
+        background-color: ${({theme}) => theme.primaryColor};
     }
     cursor: pointer;
 `;

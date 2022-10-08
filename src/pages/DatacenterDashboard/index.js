@@ -1,11 +1,12 @@
 import React from 'react';
 import * as S from './styles';
 
+import Header from '../../components/Header';
+import Sidenav from '../../components/Sidenav';
+
 import Chart from '../../components/Dashboard/Chart';
 import Database from '../../components/Dashboard/Database';
 import Thermostats from '../../components/Dashboard/Thermostats';
-import Sidenav from '../../components/Sidenav';
-import Header from '../../components/Header';
 
 export default function DatacenterDashboard() {
 	return (
