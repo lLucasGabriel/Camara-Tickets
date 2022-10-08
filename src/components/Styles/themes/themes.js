@@ -1,3 +1,11 @@
+export const defaultTheme = {
+	primaryColor: '#CCB8C1',
+	secondaryColor: '#433848',
+	secondaryColorContrast: '#957E90',
+	secondaryColorDark: '#55485A',
+	sidebarColor: '#55465B',
+};
+
 export const burocraticTheme = {
 	primaryColor: '#ffffff',
 	secondaryColor: '#999999',

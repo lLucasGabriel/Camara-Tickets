@@ -46,6 +46,7 @@ export const TableFooter = styled.footer`
       width: 20px;
       height: 20px;
       margin-right: 5px;
+      stroke: "gray";
     }
     .forward svg{
       transform: rotate(270deg);   

@@ -9,7 +9,7 @@ import MainRoutes from './routes/routes.js';
 
 export default function App() {
 	return (
-		<ThemeProvider theme={theme.purpleTheme}>
+		<ThemeProvider theme={theme.defaultTheme}>
 			<Router>
 				<MainRoutes />
 			</Router>

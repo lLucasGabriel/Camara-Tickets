@@ -23,9 +23,11 @@ export default function Header() {
 				<Notification/>
 				<Profile/>
 				<S.UserTools>
-					<div className='profileImage'></div>
-					<p className='profileName'>Aldous Huxley</p>
-					<p className='username'>Aldous Huxley</p>
+					<img src='assets/img/user1.png' alt='user' className='profileImage'/>
+					<S.Username>
+						<p className='profileName'>Aldous Huxley</p>
+						<p className='username'>Aldous Huxley</p>
+					</S.Username>
 					<Arrow/>
 				</S.UserTools>
 			</S.Tools>

@@ -13,23 +13,22 @@ export const Sidenav = styled.nav`
 `;
 
 export const Sidebar = styled.ul`
-  background-color: #454660;
+  background-color: ${({theme}) => theme.sidebarColor};
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85px;
-  height: 100vh;
+  width: 70px;
   box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
   z-index: 1;
   
   li:first-child {
-    background-color: #454660;
-    margin: 20px 0px 40px 0px;
+    background-color: ${({theme}) => theme.sidebarColor};
+    margin: 20px 0px 30px 0px;
     cursor: pointer;
   }
   li:not(:first-child) {
-    background-color: #37384D;
+    background-color:  ${({theme}) => theme.secondaryColor};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,25 +39,24 @@ export const Sidebar = styled.ul`
   }
   li:not(:first-child):hover {
     background: linear-gradient(90deg, ${({theme}) => theme.primaryColor} 0%, ${({theme}) => theme.secondaryColor} 100%);
-    transition: 3s ease;
   }
   li:hover svg {
-    fill: ${({theme}) => theme.contrastColor};
+    fill: white;
   }
   li:last-child {
     margin-top: auto;
   }
 
   svg {
-    width: 45px;
-    height: 45px;
-    fill: ${({theme}) => theme.contrastColor}
+    width: 40px;
+    height: 40px;
+    fill: rgba(244, 247, 251, 0.8);
   }
 `;
 
 export const NavContent = styled.div`
-    background: linear-gradient(90deg, #2D2E40 0%, #343549 100%);
-    width: 340px;
+    background: linear-gradient(90deg, ${({theme}) => theme.secondaryColor} 0%, ${({theme}) => theme.secondaryColorDark} 100%);
+    width: 275px;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);

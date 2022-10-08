@@ -4,50 +4,56 @@ import * as S from './styles';
 import Chart from '../../components/Dashboard/Chart';
 import Database from '../../components/Dashboard/Database';
 import Thermostats from '../../components/Dashboard/Thermostats';
+import Sidenav from '../../components/Sidenav';
+import Header from '../../components/Header';
 
 export default function DatacenterDashboard() {
 	return (
-		<S.Container>
-			<S.DatacenterDashboard>
-				<h2>Datacenter Dashboard</h2>
-				<section className='dashboard'>
-					<div className='container'>
-						<Database server={'ASA ESQUERDA'}/>
-						<div className='data'>
-							<Chart/>
-							<Thermostats/>
+		<>
+			<Header />
+			<S.Container>
+				<Sidenav />
+				<S.DatacenterDashboard>
+					<h2>Datacenter Dashboard</h2>
+					<section className='dashboard'>
+						<div className='container'>
+							<Database server={'ASA ESQUERDA'}/>
+							<div className='data'>
+								<Chart/>
+								<Thermostats/>
+							</div>
 						</div>
-					</div>
-					<div className='container'>
-						<Database server={'CASTELINHO'}/>
-						<div className='data'>
-							<Chart/>
-							<Thermostats/>
+						<div className='container'>
+							<Database server={'CASTELINHO'}/>
+							<div className='data'>
+								<Chart/>
+								<Thermostats/>
+							</div>
 						</div>
-					</div>
-					<div className='container'>
-						<Database server={'DATACENTER'}/>
-						<div className='data'>
-							<Chart/>
-							<Thermostats/>
+						<div className='container'>
+							<Database server={'DATACENTER'}/>
+							<div className='data'>
+								<Chart/>
+								<Thermostats/>
+							</div>
 						</div>
-					</div>
-					<div className='container'>
-						<Database server={'AUDITORIO'}/>
-						<div className='data'>
-							<Chart/>
-							<Thermostats/>
+						<div className='container'>
+							<Database server={'AUDITORIO'}/>
+							<div className='data'>
+								<Chart/>
+								<Thermostats/>
+							</div>
 						</div>
-					</div>
-					<div className='container'>
-						<Database server={'ASA DIREITA'}/>
-						<div className='data'>
-							<Chart/>
-							<Thermostats/>
+						<div className='container'>
+							<Database server={'ASA DIREITA'}/>
+							<div className='data'>
+								<Chart/>
+								<Thermostats/>
+							</div>
 						</div>
-					</div>
-				</section>
-			</S.DatacenterDashboard>
-		</S.Container>
+					</section>
+				</S.DatacenterDashboard>
+			</S.Container>
+		</>
 	);
 }
