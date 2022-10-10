@@ -1,16 +1,39 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 336px;
+    padding: 18px;
+    height: fit-content;
+    background: linear-gradient(90deg, ${({theme}) => theme.db_container_1} 26.56%, ${({theme}) => theme.db_container_2} 75%, ${({theme}) => theme.db_container_3} 100%);
+    border-radius: 2px;
+    cursor: default;
+
+    .title {
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 12px;
+    letter-spacing: 0.7em;
+    color: #F35309;
+    }
+    .server {
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(55, 56, 77, 0.8);
+    }
+`;
+
 export const Thermostats = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    width: 336px;
-    height: 157px;
-    background: linear-gradient(90deg, ${({theme}) => theme.db_container_1} 26.56%, ${({theme}) => theme.db_container_2} 75%, ${({theme}) => theme.db_container_3} 100%);;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    cursor: default;
 `;
 
 export const TemperatureThermostat = styled.div`

@@ -7,16 +7,16 @@ Database.propTypes = {
 	server: PropTypes.string,
 };
 
-export default function Database({server}) {
+export default function Database({ server }) {
 	return (
 		<S.Database>
 			<div className='block'>
 				<p>SERVIDOR</p>
-				<p>{server}</p>  
-			</div>       
-			<div className='block'></div>       
-			<div className='block'></div>      
-			<div className='block'></div>       
+				<p>{server}</p>
+			</div>
+			<div className='block'></div>
+			<div className='block'></div>
+			<div className='block'></div>
 			<div className='block'>
 				<div className='box'>
 					<div className='inside'>
