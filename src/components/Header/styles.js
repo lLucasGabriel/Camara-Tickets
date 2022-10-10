@@ -5,7 +5,7 @@ export const Container = styled.header`
     align-items: center;
     gap: 15px;
     height: 70px;
-    background: linear-gradient(90deg, #433848 0%, #957E90 100%);
+    background: linear-gradient(90deg, ${({theme}) => theme.secondaryColor} 0%, ${({theme}) => theme.secondaryColorContrast} 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 

@@ -9,6 +9,7 @@ import { ReactComponent as Arrow } from '../../assets/img/Arrow.svg';
 import { ReactComponent as Notification } from '../../assets/img/Notification.svg';
 
 export default function Header() {
+
 	return (
 		<S.Container>
 			<S.Head className='title'>

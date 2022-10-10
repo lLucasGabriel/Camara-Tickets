@@ -13,7 +13,7 @@ export const Input = styled.input`
     padding-left: 10px;
     padding-right: 25px;
     background: #FFFFFF;
-    border: 6px solid #CCB8C1;
+    border: 6px solid ${({theme}) => theme.primaryColor};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     :focus {
@@ -32,12 +32,12 @@ export const Label = styled.label`
     top: 3px;
     width: 24px;
     height: 24px;
-    background: #CCB8C1;
+    background: ${({theme}) => theme.primaryColor};
     border: 1px solid #FFFFFF;
     border-radius: 25px;
     svg {
         height: 16px;
         width: 16px;
-        fill: #524E4E;
+        fill: ${({theme}) => theme.svgColor};
     }
 `;
