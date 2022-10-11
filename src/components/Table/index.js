@@ -1,14 +1,16 @@
 import React from 'react';
 import * as S from './styles';
 
-import Tbody from './Tbody';
-import Thead from './Thead';
+import PropTypes from 'prop-types';
 
-export default function Table() {
+Table.propTypes = {
+	children: PropTypes.func,
+};
+
+export default function Table({ children }) {
 	return (
 		<S.Table>
-			<Thead/>
-			<Tbody/>
+			{ children }
 		</S.Table>
 	);
 }

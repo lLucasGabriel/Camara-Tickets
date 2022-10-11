@@ -6,6 +6,7 @@ import NavContentTitle from '../NavContentTitle';
 import { ReactComponent as UserEdit } from '../../../../assets/img/UserEdit.svg';
 import { ReactComponent as UserAdd } from '../../../../assets/img/UserAdd.svg';
 import { ReactComponent as Logout } from '../../../../assets/img/Logout.svg';
+import { Link } from 'react-router-dom';
 
 export default function UserPreferences() {
 	return (
@@ -22,10 +23,12 @@ export default function UserPreferences() {
 				<UserEdit/>
 				<p>Editar Informações</p>
 			</li>
-			<li className='navLink'>
-				<UserAdd/>
-				<p>Adicionar Membro</p>
-			</li>
+			<Link to={'/newUser'}>
+				<li className='navLink'>
+					<UserAdd/>
+					<p>Adicionar Membro</p>
+				</li>
+			</Link>
 			<li className='navLink'>
 				<Logout/>
 				<p>Sair</p>

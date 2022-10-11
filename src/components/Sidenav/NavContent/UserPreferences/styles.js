@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavList = styled.ul`
-  .navLink:not(:first-child){
+  .navLink{
     background-color: ${({theme}) => theme.secondaryColor};
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@ export const NavList = styled.ul`
     cursor: pointer;
   }
 
-  .navLink:not(:first-child):hover {
+  .navLink:hover {
     background: linear-gradient(90deg, ${({theme}) => theme.primaryColor} 0%, ${({theme}) => theme.secondaryColor} 100%);
   }
 

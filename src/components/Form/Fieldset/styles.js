@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Fieldset = styled.fieldset`
     position: relative;
     height: 60px;
-    width: 100px;
     display: flex;
     flex-direction: column;
     border: 0;

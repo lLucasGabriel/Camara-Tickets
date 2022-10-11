@@ -9,8 +9,7 @@ export const Container = styled.div`
     main {
         display: flex;
         width: 100%;
-        align-items: center;
-        margin-top: 38px;
+        margin-top: 64px;
     }
 `;
 
@@ -19,18 +18,29 @@ export const Section = styled.section`
     flex-direction: column;
     background-color: #ffffff;
     width: 100%;
-    height: 570px;
+    height: fit-content;
+
+    footer {
+        background-color: #ffffff;
+        width: 100%;
+        height: 60px;
+        padding: 0px 100px;
+        border-top: solid 1px #ECF0F5;    
+    }
 `;
 
-export const Title = styled.h2`
-    align-self: flex-start;
+export const Title = styled.div`
+    display: flex;
     width: 100%;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 19px;
-    color: #37384D;
     padding: 15px 100px;
     border-bottom: solid 1px #ECF0F5;
+    
+    h2 {
+        font-weight: 600;
+        font-size: 0.95em;
+        line-height: 19px;
+        color: #37384D;
+    }
 `;
 
 export const Tip = styled.article`
@@ -50,43 +60,11 @@ export const Tip = styled.article`
 `;
 
 export const Form = styled.form`
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    column-gap: 150px;
     width: 700px;
     height: 400px;
     margin: 15px 100px;
-`;
-
-export const CheckboxLabel = styled.p`
-    font-weight: 400;
-    font-size: 15px;
-    color: #6A6A6A;
-`;
-
-export const Checkbox = styled.fieldset`
-    height: 40px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 0;
-
-    input {
-        background: none;
-        border: 1px solid #C4C4C4;
-        border-radius: 10px;
-        color: #6A6A6A;
-    }
-    
-    input:checked {
-        background-color: #4C7868;
-    }
-
-    label {
-        font-weight: 400;
-        font-size: 15px;
-        color: #6A6A6A;
-        margin-right: 10px;
-    }
 `;
