@@ -4,7 +4,7 @@ import * as S from './styles';
 import Header from '../../components/Header';
 import Sidenav from '../../components/Sidenav';
 
-import Fieldset from '../../components/Form/Fieldset';
+import Input from '../../components/Form/Input';
 import Submit from '../../components/Form/Submit';
 
 export default function NewUser() {
@@ -25,37 +25,37 @@ export default function NewUser() {
 							</p>
 						</S.Tip>
 						<S.Form>
-							<Fieldset
+							<Input
 								label={'Nome'}
 								id={'name'}
 								inputType={'text'}
 							/>
-							<Fieldset
+							<Input
 								label={'Nascimento'}
 								id={'birthday'}
 								inputType={'text'}
 							/>
-							<Fieldset
+							<Input
 								label={'CPF'}
 								id={'cpf'}
 								inputType={'text'}
 							/>
-							<Fieldset
+							<Input
 								label={'Registro CMS'}
 								inputType={'text'}
 								id={'record'}
 							/>
-							<Fieldset
+							<Input
 								label={'Usuário'}
 								id={'username'}
 								inputType={'text'}
 							/>
-							<Fieldset
+							<Input
 								label={'Email'}
 								id={'email'}
 								inputType={'email'}
 							/>
-							<Fieldset
+							<Input
 								label={'Origem'}
 								id={'origin'}
 								inputType={'text'}

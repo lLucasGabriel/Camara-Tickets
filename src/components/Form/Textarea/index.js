@@ -11,6 +11,7 @@ Textarea.propTypes = {
 export default function Textarea({label, id}) {
 	return(
 		<S.Fieldset>
+			<S.Label htmlFor={id}>{label}</S.Label>
 			<S.Input 
 				name={id}
 				id={id}
@@ -18,7 +19,6 @@ export default function Textarea({label, id}) {
 				rows={'10'}
 				required
 			></S.Input>
-			<S.Label htmlFor={id}>{label}</S.Label>
 		</S.Fieldset>
 	);
 }

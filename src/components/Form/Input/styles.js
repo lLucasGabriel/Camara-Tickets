@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Fieldset = styled.fieldset`
-    height: 200px;
+    height: 60px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ export const Label = styled.label`
     cursor: text;
 `;
 
-export const Input = styled.textarea`
+export const Input = styled.input`
     width: 100%;
     padding: 12px 10px;
     background: #FFFFFF;

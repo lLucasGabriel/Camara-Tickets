@@ -1,17 +1,20 @@
 import React from 'react';
 import * as S from './styles';
 
+import { Link } from 'react-router-dom';
+
 import Sidenav from '../../components/Sidenav';
 import Header from '../../components/Header';
 import Table from '../../components/Table';
 import TableFooter from '../../components/Table/TableFooter';
 import Status from '../../components/Table/Status';
 import tickets from './tickets.json';
+import SearchBar from '../../components/Form/SearchBar';
+import Button from '../../components/Form/Button';
 
-import { ReactComponent as Search } from '../../assets/img/Search.svg';
 import { ReactComponent as Support } from '../../assets/img/Support.svg';
 import { ReactComponent as Heart } from '../../assets/img/Heart.svg';
-import { ReactComponent as Profile } from '../../assets/img/Profile.svg';
+import { ReactComponent as User } from '../../assets/img/User.svg';
 import { ReactComponent as Ticket } from '../../assets/img/Ticket.svg';
 import { ReactComponent as Clock } from '../../assets/img/Clock.svg';
 import { ReactComponent as Home } from '../../assets/img/Home.svg';
@@ -23,16 +26,13 @@ export default function Tickets() {
 			<S.Container>
 				<Sidenav />
 				<S.Tickets>
-					<h2>Tickets</h2>
+					<h2>TICKETS</h2>
 					<S.TableSection>
 						<div className='head'>
-							<fieldset className='search'>
-								<label htmlFor="search">
-									<Search />
-								</label>
-								<input type="text" name='search' placeholder='Filtre por título, local ou solicitante' />
-							</fieldset>
-							<button>+ Novo Ticket</button>
+							<Link to={'/newTicket'}>
+								<Button value='Novo Ticket' />
+							</Link>
+							<SearchBar color='gray' />
 						</div>
 						<Table>
 							<thead>
@@ -48,7 +48,7 @@ export default function Tickets() {
 									</th>
 									<th>
 										<div>
-											<Profile />
+											<User />
 											<p>SOLICITANTE</p>
 										</div>
 									</th>

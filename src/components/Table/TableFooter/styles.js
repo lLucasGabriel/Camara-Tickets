@@ -8,6 +8,7 @@ export const TableFooter = styled.footer`
     width: 100%;
     height: 60px;
     font-size: 13px;
+    color: #524e4e;
 
     .lineManagement {
       display: flex;
@@ -19,10 +20,12 @@ export const TableFooter = styled.footer`
       align-items: center;
       justify-content: space-between;
       background-color: white;
-      border: 1.5px solid #ECF0F5;
+      border: 0;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
-      padding: 3px;
-      width: 50px;
+      padding: 3px 5px;
+      width: 60px;
+      height: 30px;
       margin-left: 10px;
       cursor: pointer;
     }
@@ -34,24 +37,23 @@ export const TableFooter = styled.footer`
     .backForward button{
       display: flex;
       align-items: center;
+      justify-content: center;
       background-color: white;
-      border: 1.5px solid #ECF0F5;
+      border: 0;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
       height: 30px;
+      width: 30px;
       margin-left: 10px;
       cursor: pointer;
     }
     .back svg{
       transform: rotate(90deg);
-      width: 20px;
-      height: 20px;
       margin-right: 5px;
       stroke: "gray";
     }
     .forward svg{
-      transform: rotate(270deg);   
-      width: 20px;
-      height: 20px;   
+      transform: rotate(270deg);     
       margin-left: 5px;
     }
 `;

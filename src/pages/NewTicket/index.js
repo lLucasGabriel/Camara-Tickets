@@ -4,7 +4,7 @@ import * as S from './styles';
 import Header from '../../components/Header';
 import Sidenav from '../../components/Sidenav';
 
-import Fieldset from '../../components/Form/Fieldset';
+import Input from '../../components/Form/Input';
 import Textarea from '../../components/Form/Textarea';
 import Submit from '../../components/Form/Submit';
 
@@ -17,7 +17,7 @@ export default function NewTicket() {
 				<main>
 					<S.Section>
 						<S.Title>
-							<h2>NOVO TICKET</h2>
+							<h2>Novo Ticket</h2>
 						</S.Title>
 						<S.Tip>
 							<p>Dica!</p>
@@ -26,17 +26,17 @@ export default function NewTicket() {
 							</p>
 						</S.Tip>
 						<S.Form>
-							<Fieldset
+							<Input
 								label={'Solicitante'}
 								id={'requester'}
 								inputType={'text'}
 							/>
-							<Fieldset
+							<Input
 								label={'Setor'}
 								id={'sector'}
 								inputType={'text'}
 							/>
-							<Fieldset
+							<Input
 								label={'Categoria'}
 								id={'category'}
 								inputType={'text'}
@@ -45,12 +45,12 @@ export default function NewTicket() {
 								label={'Solicitação'}
 								id={'request'}
 							/>
-							<Fieldset
+							<Input
 								label={'Local'}
 								id={'local'}
 								inputType={'text'}
 							/>
-							<Fieldset
+							<Input
 								label={'Prioridade'}
 								id={'Prioridade'}
 								inputType={'text'}

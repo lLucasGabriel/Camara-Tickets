@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Input = styled.input`
-    position: absolute;
-    bottom: -60px;
     width: 110px;
     height: 29px;
     background-color: #84C7AE;

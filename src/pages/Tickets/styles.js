@@ -10,9 +10,9 @@ export const Container = styled.div`
 export const Tickets = styled.main`
   width: 100%;
   h2 {
-    line-height: 19px;
-    font-weight: 600;
-    margin: 10px 40px;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 10px 15px;
   }  
 `;
 
@@ -24,33 +24,10 @@ export const TableSection = styled.section`
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding: 10px 15px;
     border: 0;
   }
-  .search {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border: 0;
-  }
-  .search input{
-    width: 260px;
-    height: 30px;
-    padding: 5px;
-    border: 2px solid #BABABA;
-    border-radius: 2px;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 13px;
-    margin-left: 10px;
-  }
-  .search input::placeholder {
-    color: #BABABA;
-  }
-  .search svg {
-    width: 30px;
-    height: 30px;
-    margin: 0px 10px;
-  }
+
   .head button {
     background-color: #298D8C;
     border: 0;
@@ -61,6 +38,10 @@ export const TableSection = styled.section`
     font-size: 13px;
     margin-right: 26px;
     cursor: pointer;
+  }
+
+  svg {
+    fill: 'black'
   }
 `;
 
