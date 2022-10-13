@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
 }
 .themeSwitcher {
+    z-index: 3;
     position: absolute;
     right: 323px;
     top: 15px;

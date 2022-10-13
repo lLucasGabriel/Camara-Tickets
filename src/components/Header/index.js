@@ -1,6 +1,12 @@
 import React from 'react';
 import * as S from './styles';
 
+import PropTypes from 'prop-types';
+
+Header.propTypes = {
+	color: PropTypes.string,
+};
+
 import Brasao from '../../assets/img/brasão.png';
 import SearchBar from '../Form/SearchBar';
 
@@ -8,10 +14,10 @@ import { ReactComponent as Profile } from '../../assets/img/Profile.svg';
 import { ReactComponent as Arrow } from '../../assets/img/Arrow.svg';
 import { ReactComponent as Notification } from '../../assets/img/Notification.svg';
 
-export default function Header() {
+export default function Header({ color }) {
 
 	return (
-		<S.Container>
+		<S.Container className={color}>
 			<S.Head className='title'>
 				<S.Arms>
 					<div>

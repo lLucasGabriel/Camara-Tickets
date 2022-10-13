@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const NavList = styled.ul`
+  position: fixed;
   .navLink {
+    width: 240px;
     background-color: ${({ theme }) => theme.secondaryColor};
     display: flex;
     align-items: center;

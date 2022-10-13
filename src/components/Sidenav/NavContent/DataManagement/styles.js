@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const NavList = styled.ul`
+  position: fixed;
   .navLink {
     background-color: ${({ theme }) => theme.secondaryColor};
+    width: 240px;
     display: flex;
     align-items: center;
     margin: 0px 16px;
@@ -28,6 +30,7 @@ export const NavList = styled.ul`
   }
   
   .navLink p {
+    width: 100px;
     font-weight: 200;
     font-size: 0.9em;
     line-height: 17px;

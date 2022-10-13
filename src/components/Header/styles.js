@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
+    z-index: 2;
+    position: fixed;
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 15px;
     height: 70px;
     background: linear-gradient(90deg, ${({theme}) => theme.secondaryColor} 0%, ${({theme}) => theme.secondaryColorContrast} 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    &.transparent {
+        background: linear-gradient(90deg, #433848 345px, rgba(149, 126, 144, 0) 345px);
+        box-shadow: none;
+    }
 `;
 
 export const Head = styled.div`
