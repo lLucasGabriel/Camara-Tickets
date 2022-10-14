@@ -12,7 +12,7 @@ export const Container = styled.header`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
     &.transparent {
-        background: linear-gradient(90deg, #433848 345px, rgba(149, 126, 144, 0) 345px);
+        background: linear-gradient(90deg, ${({theme}) => theme.secondaryColor} 345px, rgba(149, 126, 144, 0) 345px);
         box-shadow: none;
     }
 `;

@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 .themeSwitcher {
     z-index: 3;
-    position: absolute;
+    position: fixed;
     right: 323px;
     top: 15px;
     display: flex;
