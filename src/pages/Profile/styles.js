@@ -23,7 +23,7 @@ export const Section = styled.section`
     align-self: flex-end;
     background: linear-gradient(90deg, ${({ theme }) => theme.primaryColor} 0%, ${({ theme }) => theme.secondaryColorContrast} 100%);
     width: 100%;
-    height: 50%;
+    height: 60%;
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -32,8 +32,8 @@ export const Section = styled.section`
 export const Settings = styled.div`
     align-self: flex-end;
     background-color: #F8FAFC;
-    border-radius: 5px;
-    width: 50%;
+    border-radius: 5px 5px 0px 0px;
+    width: 780px;
     height: calc(100% + 30px);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 
@@ -63,7 +63,7 @@ export const Header = styled.div`
         padding: 30px 60px;        
 
         h2 {
-        color: '#FFFFFF';
+        color: #FFFFFF;
         font-size: 1.2em;
         font-weight: 500;
         letter-spacing: 0.09em;  
@@ -74,8 +74,8 @@ export const Card = styled.div`
     position: relative;
     align-self: flex-end;
     background-color: #F8FAFC;
-    border-radius: 5px;
-    width: 30%;
+    border-radius: 5px 5px 0px 0px;
+    width: 470px;
     height: calc(100% + 30px);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 

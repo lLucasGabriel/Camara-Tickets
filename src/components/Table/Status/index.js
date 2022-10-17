@@ -18,7 +18,10 @@ export default function Status({ status, text }) {
   
 			'Baixa': 'green',
 			'Média': 'orange',
-			'Alta': 'red'
+			'Alta': 'red',
+
+			'Ativo': 'green',
+			'Inativo': 'red'
 		};
 		return statusColor[status];
 	}

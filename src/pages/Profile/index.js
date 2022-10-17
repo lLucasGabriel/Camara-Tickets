@@ -53,7 +53,7 @@ export default function Profile() {
 						</S.Settings>
 						<S.Card>
 							<S.Header>
-								<h2 style={{ color: 'white' }}>Perfil</h2>
+								<h2>Perfil</h2>
 							</S.Header>
 							<img src='assets/img/user1.png' alt='user' className='profileImage'/>
 							<ul>

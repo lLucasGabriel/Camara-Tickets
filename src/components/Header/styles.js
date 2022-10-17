@@ -9,10 +9,12 @@ export const Container = styled.header`
     gap: 15px;
     height: 70px;
     background: linear-gradient(90deg, ${({theme}) => theme.secondaryColor} 0%, ${({theme}) => theme.secondaryColorContrast} 100%);
+    transition: background-color 0.5s ease;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
     &.transparent {
         background: linear-gradient(90deg, ${({theme}) => theme.secondaryColor} 345px, rgba(149, 126, 144, 0) 345px);
+        transition: background-color 0.5s ease;
         box-shadow: none;
     }
 `;

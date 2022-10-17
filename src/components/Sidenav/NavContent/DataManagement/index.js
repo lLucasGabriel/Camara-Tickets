@@ -13,7 +13,7 @@ export default function DataManagement() {
 			<li>
 				<NavContentTitle title="Dispositivos de Rede"/>
 			</li>
-			<Link to={'/'}>
+			<Link to={'/datacenterDashboard'}>
 				<li className='navLink'>
 					<Data/>
 					<p>Datacenter Dashboard</p>

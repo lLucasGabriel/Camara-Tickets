@@ -15,6 +15,7 @@ export const Sidenav = styled.nav`
 export const Sidebar = styled.ul`
   position: fixed;
   background-color: ${({theme}) => theme.sidebarColor};
+  transition: background-color 0.5s ease;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -59,6 +60,7 @@ export const Sidebar = styled.ul`
 export const NavContent = styled.div`
     margin-left: 70px;
     background: linear-gradient(90deg, ${({theme}) => theme.secondaryColor} 0%, ${({theme}) => theme.secondaryColorDark} 100%);
+    transition: background-color 0.5s ease;
     width: 275px;
     display: flex;
     flex-direction: column;

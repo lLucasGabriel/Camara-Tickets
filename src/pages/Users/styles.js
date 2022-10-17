@@ -8,7 +8,7 @@ export const Container = styled.div`
     width: 100%;
 `;
 
-export const Tickets = styled.main`
+export const Users = styled.main`
   width: 100%;
   h2 {
     font-weight: 500;
@@ -46,13 +46,14 @@ export const TableSection = styled.section`
   }
 
   td:last-child svg{
+      stroke: #524E4E;
       cursor: pointer;
     }
 
     td:last-child svg:first-child:hover{
-      fill: #007F00;
+      stroke: #007F00;
     }
     td:last-child svg:last-child:hover{
-      fill: #F90000;
+      stroke: #F90000;
   }
 `;

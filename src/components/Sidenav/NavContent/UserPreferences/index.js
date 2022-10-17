@@ -19,10 +19,16 @@ export default function UserPreferences() {
 				<img src={'assets/img/user1.png'} className='profileImage' alt='User'/>
 				<h2 className='profileName'>Aldous Huxley</h2>
 			</S.ProfileTemplate>
-			<Link to={'/profile'}>
+			<Link to={'/'}>
 				<li className='navLink'>
 					<UserEdit/>
 					<p>Editar Informações</p>
+				</li>
+			</Link>
+			<Link to={'/users'}>
+				<li className='navLink'>
+					<UserEdit/>
+					<p>Todos os Membros</p>
 				</li>
 			</Link>
 			<Link to={'/newUser'}>

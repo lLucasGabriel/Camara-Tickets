@@ -29,18 +29,6 @@ export const Table = styled.table`
       text-align: center;
     }
 
-    td:last-child svg{
-      width: 25px;
-      height: 25px;
-      cursor: pointer;
-    }
-    td:last-child svg:first-child:hover{
-      fill: #007F00;
-    }
-    td:last-child svg:last-child:hover{
-      fill: #F90000;
-    }
-
     th, td {
       font-size: 13px;
       line-height: 11px;
@@ -60,8 +48,6 @@ export const Table = styled.table`
       height: 17px;
       fill: black
     }
-
-    //THEAD
 
     //TBODY
 
