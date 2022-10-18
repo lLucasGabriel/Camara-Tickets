@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Profile from '../pages/Profile';
 import DatacenterDashboard from '../pages/DatacenterDashboard';
-import Support from '../pages/Support';
+import Ticket from '../pages/Ticket';
 import NotFound from '../pages/NotFound/index.js';
 import NewTicket from '../pages/NewTicket';
 import Tickets from '../pages/Tickets';
@@ -16,7 +16,7 @@ export default function MainRoutes() {
 			<Routes>
 				<Route path='/' element={<Profile />} />
 				<Route path='/datacenterDashboard' element={<DatacenterDashboard />} />
-				<Route path='/support' element={<Support />} />
+				<Route path='/ticket' element={<Ticket />} />
 				<Route path='/tickets' element={<Tickets />} />
 				<Route path='/newTicket' element={<NewTicket />} />
 				<Route path='/users' element={<Users />} />

@@ -7,13 +7,13 @@ import ticket from './ticket.json';
 import Status from '../../components/Table/Status';
 import Textarea from '../../components/Form/Textarea';
 
-export default function Support() {
+export default function Ticket() {
 	return (
 		<>
 			<Header />
 			<S.Container>
 				<Sidenav />
-				<S.Support>
+				<S.Main>
 					<h2>ATENDIMENTO</h2>
 					{ticket.map(ticket => (
 						<>
@@ -74,7 +74,7 @@ export default function Support() {
 							</S.Attendance>
 						</>
 					))}
-				</S.Support>
+				</S.Main>
 			</S.Container>
 		</>
 	);

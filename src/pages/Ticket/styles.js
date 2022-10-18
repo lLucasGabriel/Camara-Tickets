@@ -8,7 +8,7 @@ export const Container = styled.div`
     width: 100%;
 `;
 
-export const Support = styled.main`
+export const Main = styled.main`
   width: 100%;
   display: flex;
   h2 {
