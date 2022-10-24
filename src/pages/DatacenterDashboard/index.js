@@ -4,7 +4,7 @@ import * as S from './styles';
 import Header from '../../components/Header';
 import Sidenav from '../../components/Sidenav';
 
-import Chart from '../../components/Dashboard/Chart';
+import LineChart from '../../components/Dashboard/LineChart';
 import Database from '../../components/Dashboard/Database';
 import Thermostats from '../../components/Dashboard/Thermostats';
 
@@ -29,7 +29,9 @@ export default function DatacenterDashboard() {
 							<div className='data'>
 								<Thermostats server={'ASA ESQUERDA'} />
 							</div>
-							<Chart />
+							<div className='linechart'>
+								<LineChart />
+							</div>
 						</div>
 						<div className='container'>
 							<div className='db_container'>
@@ -38,7 +40,7 @@ export default function DatacenterDashboard() {
 							<div className='data'>
 								<Thermostats server={'CASTELINHO'} />
 							</div>
-							<Chart />
+							<LineChart />
 						</div>
 						<div className='container'>
 							<div className='db_container'>
@@ -47,7 +49,7 @@ export default function DatacenterDashboard() {
 							<div className='data'>
 								<Thermostats server={'DATACENTER'} />
 							</div>
-							<Chart />
+							<LineChart />
 						</div>
 						<div className='container'>
 							<div className='db_container'>
@@ -56,7 +58,7 @@ export default function DatacenterDashboard() {
 							<div className='data'>
 								<Thermostats server={'AUDITORIO'} />
 							</div>
-							<Chart />
+							<LineChart />
 						</div>
 						<div className='container'>
 							<div className='db_container'>
@@ -65,7 +67,7 @@ export default function DatacenterDashboard() {
 							<div className='data'>
 								<Thermostats server={'ASA DIREITA'} />
 							</div>
-							<Chart />
+							<LineChart />
 						</div>
 					</section>
 				</S.DatacenterDashboard>

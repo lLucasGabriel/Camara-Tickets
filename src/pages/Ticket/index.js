@@ -67,6 +67,34 @@ export default function Ticket() {
 											<p className='message'>{ticket.message}</p>
 										</div>
 									</div>
+									<div className='chatbox'>
+										<div>
+											<img src='assets/img/user2.png' alt='user' />
+											<div className='header'>
+												<span>
+													{ticket.date}
+													<br />
+													<strong>Ticket atendido por Shairon Hosokawa</strong>
+												</span>
+												<Status status={'Em Atendimento'} text={'Em atendimento'} />
+											</div>
+											<p className='message'>{ticket.message}</p>
+										</div>
+									</div>
+									<div className='chatbox'>
+										<div>
+											<img src='assets/img/user3.png' alt='user' />
+											<div className='header'>
+												<span>
+													{ticket.date}
+													<br />
+													<strong>Ticket aberto por Albert Camus</strong>
+												</span>
+												<Status status={'Aberto'} text={'Aberto'} />
+											</div>
+											<p className='message'>{ticket.message}</p>
+										</div>
+									</div>
 								</S.Chat>
 								<S.Form>
 									<Textarea label={'Iniciar Atendimento'} id={'attendance'}/>

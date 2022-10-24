@@ -24,25 +24,27 @@ export default function Sidenav() {
 	return (
 		<S.Sidenav>
 			<S.Sidebar>
-				<li>
-					{aberto ? (
-						<Close onClick={() => setAberto(false)}/>
-					) : (
-						<Open onClick={() => setAberto(!aberto)}/>
-					)}
-				</li>
-				<li>
-					<User onClick={() => (abrirMenu(1), setAberto(aberto === false ? !aberto : aberto))}/>
-				</li>
-				<li>
-					<Ticket onClick={() => (abrirMenu(2), setAberto(aberto === false ? !aberto : aberto))}/>
-				</li>
-				<li>
-					<Database onClick={() => (abrirMenu(3), setAberto(aberto === false ? !aberto : aberto))}/>
-				</li>
-				<li>
-					<Edit onClick={() => (abrirMenu(4), setAberto(aberto === false ? !aberto : aberto))}/>
-				</li>
+				<ul>
+					<li>
+						{aberto ? (
+							<Close onClick={() => setAberto(false)}/>
+						) : (
+							<Open onClick={() => setAberto(!aberto)}/>
+						)}
+					</li>
+					<li>
+						<User onClick={() => (abrirMenu(1), setAberto(aberto === false ? !aberto : aberto))}/>
+					</li>
+					<li>
+						<Ticket onClick={() => (abrirMenu(2), setAberto(aberto === false ? !aberto : aberto))}/>
+					</li>
+					<li>
+						<Database onClick={() => (abrirMenu(3), setAberto(aberto === false ? !aberto : aberto))}/>
+					</li>
+					<li>
+						<Edit onClick={() => (abrirMenu(4), setAberto(aberto === false ? !aberto : aberto))}/>
+					</li>
+				</ul>
 			</S.Sidebar>
 			<S.NavContent className={
 				aberto ? (

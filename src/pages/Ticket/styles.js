@@ -74,7 +74,10 @@ export const Attendance = styled.section`
 
 export const Chat = styled.div`
     width: 100%;
+    height: 410px;
+    overflow-y: scroll;
     .chatbox {
+        position: relative;
         display: flex;
         margin: 20px 60px;
     }
@@ -103,5 +106,5 @@ export const Chat = styled.div`
 export const Form = styled.div`
     display: flex;
     flex-direction: column;
-    margin: auto 60px 60px 60px;
+    margin: auto 60px 50px 60px;
 `;
