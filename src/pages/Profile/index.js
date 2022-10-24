@@ -8,7 +8,7 @@ import Input from '../../components/Form/Input';
 export default function Profile() {
 	return (
 		<>
-			<Header color='transparent' />
+			<Header/>
 			<S.Container>
 				<Sidenav />
 				<main>
