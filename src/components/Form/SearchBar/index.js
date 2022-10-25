@@ -10,12 +10,11 @@ SearchBar.propTypes = {
 };
 
 export default function SearchBar({ color }) {
-	return(
-		<S.Fieldset>
+	return (
+		<S.Fieldset className={color}>
 			<S.Input
-				type={'text'} 
-				name={'search'} 
-				className={color}
+				type={'text'}
+				name={'search'}
 				id={'search'}
 				placeholder={'BUSCAR'}
 				required

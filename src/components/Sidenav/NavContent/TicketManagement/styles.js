@@ -37,4 +37,12 @@ export const NavList = styled.ul`
     color: #ffffff;
     margin-left: 20px;
   }
+
+  @media screen and (max-width: 1024px) {
+    top: 140px;
+  }
+
+  @media screen and (max-width: 720px) {
+    top: 210px;
+  }
 `;

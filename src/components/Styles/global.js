@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
 }
 .themeSwitcher {
-    z-index: 3;
+    z-index: 4;
     position: fixed;
     right: 323px;
     top: 15px;
@@ -31,6 +31,14 @@ export const GlobalStyle = createGlobalStyle`
     
     :hover {
         background-color: ${({theme}) => theme.primaryColor};
+    }
+
+    @media screen and (max-width: 1023px) {
+        top: 85px;
+    }
+
+    @media screen and (max-width: 720px) {
+        top: 155px;
     }
 }
 `;

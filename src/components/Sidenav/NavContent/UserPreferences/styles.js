@@ -4,7 +4,7 @@ export const NavList = styled.ul`
   position: fixed;
   .navLink{
     width: 240px;
-    background-color: ${({theme}) => theme.secondaryColor};
+    background-color: ${({ theme }) => theme.secondaryColor};
     display: flex;
     align-items: center;
     margin: 0px 16px;
@@ -12,12 +12,12 @@ export const NavList = styled.ul`
     padding: 5px;
     border-radius: 3px;
     transition: background-color 0.5s ease;
-    border-left: 2px solid ${({theme}) => theme.primaryColor};
+    border-left: 2px solid ${({ theme }) => theme.primaryColor};
     cursor: pointer;
   }
 
   .navLink:hover {
-    background: linear-gradient(90deg, ${({theme}) => theme.primaryColor} 0%, ${({theme}) => theme.secondaryColor} 100%);
+    background: linear-gradient(90deg, ${({ theme }) => theme.primaryColor} 0%, ${({ theme }) => theme.secondaryColor} 100%);
   }
 
   .navLink svg {
@@ -38,37 +38,45 @@ export const NavList = styled.ul`
     color: #ffffff;
     margin-left: 20px;
   }
+
+  @media screen and (max-width: 1024px) {
+    top: 140px;
+  }
+
+  @media screen and (max-width: 720px) {
+    top: 210px;
+  }
 `;
 
 export const ProfileTemplate = styled.li`
+  position: relative;
+
+  .profileBackground {
+    background: linear-gradient(90deg, ${({ theme }) => theme.primaryColor} 0%, ${({ theme }) => theme.secondaryColor} 100%);
+    border-radius: 5px;
+    height: 150px;
+    margin: 0px 16px;
+  }
+
+  .profileImage {       
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid ${({ theme }) => theme.secondaryColor};
+    height: 100px;
+    width: 100px;
+    left: 85px;
+    top: 77px;
+  }
+
+  .profileName {
     position: relative;
-
-    .profileBackground {
-        background: linear-gradient(90deg, ${({theme}) => theme.primaryColor} 0%, ${({theme}) => theme.secondaryColor} 100%);
-        border-radius: 5px;
-        height: 150px;
-        margin: 0px 16px;
-    }
-
-    .profileImage {       
-        position: absolute;
-        border-radius: 50%;
-        border: 6px solid ${({theme}) => theme.secondaryColor};
-        height: 100px;
-        width: 100px;
-        left: 85px;
-        top: 77px;
-    }
-
-    .profileName {
-        position: relative;
-        color: white;
-        font-weight: 400;
-        font-weight: 300;
-        font-size: 1.4em;
-        line-height: 24px;
-        margin: 45px 60px 20px 60px;
-        text-align: center;
-        cursor: default;
-    }
+    color: white;
+    font-weight: 400;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 24px;
+    margin: 45px 60px 20px 60px;
+    text-align: center;
+    cursor: default;
+  }
 `;

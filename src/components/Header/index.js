@@ -18,7 +18,7 @@ export default function Header({ color }) {
 
 	return (
 		<S.Container className={color}>
-			<S.Head className='title'>
+			<S.Head>
 				<S.Arms>
 					<div>
 						<img src={Brasao} alt=''/>

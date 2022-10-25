@@ -15,7 +15,7 @@ export const Sidenav = styled.nav`
 export const Sidebar = styled.div`
   width: 70px;  
   ul {
-    z-index: 1;
+    z-index: 2;
     box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
     position: fixed;
     background-color: ${({theme}) => theme.sidebarColor};
@@ -57,13 +57,35 @@ export const Sidebar = styled.div`
     height: 40px;
     fill: rgba(244, 247, 251, 0.8);
   }
+  @media screen and (max-width: 1024px) {
+    ul {
+      top: 140px;
+      height: calc(100vh - 140px);
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    ul {
+      top: 210px;
+      height: calc(100vh - 210px);
+    }
+  }
 `;
 
 export const NavContent = styled.div`
     background: linear-gradient(90deg, ${({theme}) => theme.secondaryColor} 0%, ${({theme}) => theme.secondaryColorDark} 100%);
-    transition: background-color 0.5s ease;
     width: 275px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 1023px) {
+      position: fixed;
+      left: 70px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
 `;

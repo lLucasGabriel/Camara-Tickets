@@ -15,7 +15,7 @@ export default function Profile() {
 					<S.Section>
 						<S.Settings>
 							<S.Header>
-								<h2 style={{ color: 'white' }}>Minha Conta</h2>
+								<h2>Minha Conta</h2>
 							</S.Header>
 							<h3>Suas Informações</h3>
 							<form>
